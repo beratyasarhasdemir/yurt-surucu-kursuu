@@ -5,18 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yurt Sürücü Kursu - Sultanbeyli</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style>
-
-.logo-area img{
-  width: 120px;     /* enlemesine büyür */
-  height: 75px;     /* yaklaşık +2 cm boy */
-  object-fit: contain;
-}
-
-
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 html,body{height:100%;scroll-behavior:smooth;}
 body{color:#333;overflow-x:hidden;position:relative;}
@@ -45,7 +34,6 @@ body::after{
   from{transform:translate(0,0);}
   to{transform:translate(20px,20px);}
 }
-
 
   #stats {
       text-align: center;
@@ -189,23 +177,6 @@ section h2{text-align:center;font-size:36px;margin-bottom:40px;color:#222;}
   background:#fff;padding:20px;border-radius:15px;text-align:center;
   width:160px;box-shadow:0 4px 8px rgba(0,0,0,0.1);
 }
-/* KURS SÜRECİ */
-.adim{
-  background:#fff;
-  padding:20px;
-  border-radius:15px;
-  text-align:center;
-  width:160px;
-  box-shadow:0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* 👇 BURAYA EKLE */
-.egitmen, .adim, .stat{
-  backdrop-filter: blur(10px);
-  background: rgba(255,255,255,0.15);
-  border:1px solid rgba(255,255,255,0.25);
-}
-
 .adim .numara{
   width:40px;height:40px;background:#4269e6;color:#000;
   display:flex;justify-content:center;align-items:center;
@@ -273,12 +244,12 @@ section h2{text-align:center;font-size:36px;margin-bottom:40px;color:#222;}
   border-collapse: collapse;
   margin-bottom: 30px;
 }
-#ehliyet-tarihleri table, 
-#ehliyet-tarihleri th, 
+#ehliyet-tarihleri table,
+#ehliyet-tarihleri th,
 #ehliyet-tarihleri td {
   border: 1px solid #ccc;
 }
-#ehliyet-tarihleri th, 
+#ehliyet-tarihleri th,
 #ehliyet-tarihleri td {
   padding: 10px;
   text-align: center;
@@ -294,44 +265,6 @@ section h2{text-align:center;font-size:36px;margin-bottom:40px;color:#222;}
   margin: 15px 0;
   line-height: 1.5;
 }
-.contact-box {
-    max-width: 400px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.contact-box h2 {
-    margin-bottom: 15px;
-    font-size: 22px;
-}
-
-.phone-card {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 16px;
-    margin-bottom: 10px;
-    background: #f7f7f7;
-    border-radius: 12px;
-    text-decoration: none;
-    color: #000;
-    transition: all 0.3s ease;
-}
-
-.phone-card:hover {
-    background: #e9f2ff;
-    transform: translateY(-2px);
-}
-
-.phone-card .icon {
-    font-size: 22px;
-}
-
-.phone-card p {
-    margin: 0;
-    font-size: 15px;
-    color: #555;
-}
-
 
 /* FOOTER */
 footer{
@@ -352,7 +285,6 @@ footer{
 /* ANIMATION */
 .fade-in{opacity:0;transform:translateY(30px);transition:all 1s;}
 .fade-in.visible{opacity:1;transform:translateY(0);}
-
 
 /* 🌄 Bölüm Arka Planları */
 
@@ -379,7 +311,6 @@ footer{
 }
 
 /* Başarılar kısmı için gece sürüşü efekti */
-
 #stats {
   background:
     linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
@@ -390,7 +321,7 @@ footer{
 #stats .stat { background: rgba(255, 255, 255, 0.1); color: #fff; }
 
 /* SSS kısmına da hafif dokulu bir arka plan */
-#sıkcasorulansorular {
+#sikcasorulansorular {
   background:
     linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
     url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80') center/cover fixed;
@@ -402,19 +333,6 @@ footer{
     linear-gradient(rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94)),
     url('https://images.unsplash.com/photo-1581093588401-22a3c2f3f3a3?auto=format&fit=crop&w=1600&q=80') center/cover fixed;
 }
-.phone-card div{
-  flex:1;
-  min-width:0;
-}
-
-.phone-card strong,
-.phone-card p{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-
 
 .floating-btn {
   position: fixed;
@@ -457,15 +375,15 @@ footer{
 
 #baran-zontul-anma {
       position: relative;
-      height: 500px; 
-      color: white; 
+      height: 500px;
+      color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       font-size: 2em;
-      text-shadow: 2px 2px 5px black; 
-      overflow: hidden; 
+      text-shadow: 2px 2px 5px black;
+      overflow: hidden;
     }
 
     #baran-zontul-anma::before {
@@ -477,26 +395,24 @@ footer{
       bottom: 0;
       background: url("proje/baran.jpg") center/cover no-repeat;
       opacity: 0.9;
-      z-index: -1; 
+      z-index: -1;
     }
 
     #baran-zontul-anma h2,
     #baran-zontul-anma p {
       position: relative;
-      z-index: 1; 
+      z-index: 1;
       margin: 10px 0;
     }
 </style>
 </head>
 <body>
 
-  
-
 <header id="navbar">
-
-   <div class="logo-area">
-    <img src="images/logo.png" alt="Yurt Sürücü Kursu Logo">
-    <h1 style="padding-top: 2%;">Yurt Sürücü Kursu</h1></div>
+  <div style="display: flex;">
+    <img src="./proje/ysk-logo.jpg" style="max-width: 10%; padding-right: 2%;" alt="Logo" />
+    <h1 style="padding-top: 2%;">Yurt Sürücü Kursu</h1>
+  </div>
   <nav>
     <a href="#hero">Ana Sayfa</a>
     <a href="#about">Hakkımızda</a>
@@ -505,49 +421,41 @@ footer{
     <a href="#testimonials">Yorumlar</a>
     <a href="#verilen-ehliyetler">Ehliyet Türleri</a>
     <a href="#ehliyet-tarihleri">Sınav Takvimi</a>
-    <a href="#sıkcasorulansorular">SSS</a>
+    <a href="#sikcasorulansorular">SSS</a>
     <a href="#map">Konum</a>
     <a href="#contact">İletişim</a>
     <a href="#baran-zontul-anma">Anma</a>
   </nav>
 </header>
 
-
-<a href="#contact" class="floating-btn">📋 Hemen Kayıt Ol</a>
-
+<a href="#contact" class="floating-btn">📝 Hemen Kayıt Ol</a>
 
 <section class="hero" id="hero">
   <div class="hero-content">
     <h2>Sultanbeyli'nin En Güvenilir Sürücü Kursu</h2>
-    <p>Profesyonel eğitmenlerimiz, modern araçlarımız ve yüksek başarı oranımızla ehliyet hayaline giden yolda yanındayız.</p>
+    <p>Profesyonel eğitmenlerimiz, modern araçlarımız ve yüksek başarı oranımızla ehliyet hayaline giden yolda yanınızdayız.</p>
     <a href="#contact" class="btn">Hemen Kayıt Ol</a>
   </div>
 </section>
 
 <section id="about" class="about fade-in">
-   <img 
-  src="images/ataturk.jpg"
-  alt="Mustafa Kemal Atatürk"
-  style="width:400px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.2);" />
-
-  
+   <img
+    src="./proje/ataturk.jpg"
+    alt="Mustafa Kemal Atatürk"
+    style="width:400px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.2);">
 
   <div>
     <h2>Hakkımızda</h2>
-
     <p>
-      Yurt Sürücü Kursu, 2005 yılından bu yana Sultanbeyli’de güvenli sürüş eğitimi konusunda öncü bir kurumdur.  
-      Öğrencilerimize sadece ehliyet kazandırmak değil, bilinçli sürücüler yetiştirmek en büyük hedefimizdir.  
-      Mustafa Kemal Atatürk’ün “Hayatta en hakiki mürşit ilimdir” sözünden ilham alarak modern eğitim teknikleri, 
+      Yurt Sürücü Kursu, 2005 yılından bu yana Sultanbeyli’de güvenli sürüş eğitimi konusunda öncü bir kurumdur.
+      Öğrencilerimize sadece ehliyet kazandırmak değil, bilinçli sürücüler yetiştirmek en büyük hedefimizdir.
+      Mustafa Kemal Atatürk’ün “Hayatta en hakiki mürşit ilimdir” sözünden ilham alarak modern eğitim teknikleri,
       simülasyon destekli uygulamalar ve kişiye özel ders planlamaları ile fark yaratıyoruz.
     </p>
-
     <h3>Misyonumuz</h3>
-<p>Her öğrencimizin güvenli, bilinçli ve özgüvenli bir sürücü olmasını sağlamak.</p>
-
-<h3>Vizyonumuz</h3>
-<p>Türkiye'nin en güvenilir sürücü eğitimi kurumu olmak.</p>
-
+    <p>Her öğrencimizin güvenli, bilinçli ve özgüvenli bir sürücü olmasını sağlamak.</p>
+    <h3>Vizyonumuz</h3>
+    <p>Türkiye'nin en güvenilir sürücü eğitimi kurumu olmak.</p>
   </div>
 </section>
 
@@ -556,7 +464,6 @@ footer{
   <p style="font-size:18px; text-align:center;">Deneyimli ve profesyonel eğitmenlerimizle sizlere güvenli sürüş eğitimi sunuyoruz.</p>
   <div class="egitmenler">
     <div class="egitmen"><h3>Zehra Erşaru</h3><p>Teorik trafik derslerinde uzman, öğrencilerine sabırla yaklaşır.</p></div>
-    <div class="egitmen"><h3>Erbin Pak</h3><p>Direksiyon eğitmeni olarak tecrübeli. Güvenli sürüş tekniklerini öğretir.</p></div>
     <div class="egitmen"><h3>Ümmet Taşçı</h3><p>Sabırlı ve dikkatli bir eğitmen. Her öğrenciyi kendi hızında geliştirir.</p></div>
     <div class="egitmen"><h3>Ümran Şahin</h3><p>Teorik ve pratik derslerde deneyimli, öğrencilerle iletişimi çok güçlüdür.</p></div>
     <div class="egitmen"><h3>Furkan Veysel Kıvrak</h3><p>Direksiyon derslerinde uzman ve güvenli sürüş tekniklerini öğretir.</p></div>
@@ -615,7 +522,7 @@ footer{
       Kursumuzda aşağıdaki ehliyet sınıflarında eğitim ve sertifika hizmeti verilmektedir:
     </p>
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-      
+
       <div style="background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; width: 200px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
         <h3 style="color: #007BFF;">B Sınıfı</h3>
         <p>Otomobil ve kamyonet kullanma yetkisi verir.</p>
@@ -654,7 +561,6 @@ footer{
     </div>
   </div>
 </section>
-
 
 <section id="ehliyet-tarihleri">
   <h2>2025 Kurs Dönemleri ve Sınav Tarihleri</h2>
@@ -696,12 +602,13 @@ footer{
   </table>
 
   <p>Ara sınavlarda daha önceden ehliyeti olup başka ehliyet alacaklar sınava girebilirler.<br>
-     Direksiyon sınav sisteminde yapılan değişiklik nedeniyle artık her sınav gününde en fazla 600 öğrenci sınav olmaktadır.  
+     Direksiyon sınav sisteminde yapılan değişiklik nedeniyle artık her sınav gününde en fazla 600 öğrenci sınav olmaktadır.
      Eğer kursun bulunduğu ilçede sınava giren öğrenci sayısı 2400 olursa sınav 4 günde tamamlanır.<br>
      Örn: 10 Temmuz 600 kişi, 11 Temmuz 600 kişi, 17 Temmuz 600 kişi, 18 Temmuz 600 kişi şeklinde olacaktır.<br>
      En yakın ehliyet sınav tarihi, 2025 yılı ehliyet sınav tarihleri ve ehliyet başvuru tarihleri yukarıda verilmiştir.</p>
+</section>
 
-<section id="sıkcasorulansorular" class="faq fade-in" style="max-width:800px; margin:50px auto;">
+<section id="sikcasorulansorular" class="faq fade-in" style="max-width:800px; margin:50px auto;">
   <h2 style="text-align:center; margin-bottom:30px;">Sıkça Sorulan Sorular</h2>
   <div class="soru"><h3>1. Ehliyet almak için yaş sınırı nedir?</h3><p>B sınıfı için 18, A sınıfı için 16 yaş gerekir.</p></div>
   <div class="soru"><h3>2. Direksiyon dersleri ne kadar sürüyor?</h3><p>Her direksiyon dersi 1 saat sürer, haftada 2-3 kez yapılabilir.</p></div>
@@ -713,9 +620,10 @@ footer{
     <p>Evet, sınav öncesinde ekstra uygulama dersleri ve deneme sınavları yapılmaktadır.</p>
   </div>
 </section>
+
 <section id="map" class="fade-in map">
   <h2>Konumumuz - Sultanbeyli</h2>
-  <iframe src="https://www.google.com/maps?q=Yurt%20Sürücü%20Kursu%20Sultanbeyli&output=embed" allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps?q=Yurt%20S%C3%BCr%C3%BCc%C3%BC%20Kursu%20Sultanbeyli&output=embed" allowfullscreen></iframe>
 </section>
 
 <section id="contact" class="contact fade-in">
@@ -728,33 +636,18 @@ footer{
   </form>
 </section>
 
-   <div class="contact-box">
-    <h2>İletişim</h2>
-
-    <a href="tel:+902163980164" class="phone-card">
-        <span class="icon">📞</span>
-        <div>
-            <strong>Merkez</strong>
-            <p>0 (216) 398 01 64</p>
-        </div>
-    </a>
-
-    <a href="tel:+902163980001" class="phone-card">
-        <span class="icon">📞</span>
-        <div>
-            <strong>Şube</strong>
-            <p>0 (216) 398 00 01</p>
-        </div>
-    </a>
+<div style="text-align: center; padding-bottom: 50px;">
+  <h2>İletişim Numaralarımız</h2>
+  <p>📞 <a href="tel:+902163980164">0(216) 398 01 64 (Merkez)</a></p>
+  <p>📞 <a href="tel:+902163980001">0(216) 398 00 01 (Şube)</a></p>
 </div>
 
-
-  <section id="baran-zontul-anma">
-    <h2 style="color:#000; font-family:'Nunito Sans', sans-serif;">Eski Çalışma Arkadaşımız Sevgili Baran Zontul'u Saygıyla Anıyoruz</h2>
-    <p>Baran, iyi kalbi, gülümsemesi ve pozitif enerjisiyle herkesin hayatına dokundu.  
-    Onu hep güzel anılarla, sevgiyle ve özlemle hatırlıyoruz.  
-    Ruhun şad olsun Baran Zontul. </p>
-  </section>
+<section id="baran-zontul-anma">
+  <h2 style="color:#000; font-family:'Nunito Sans', sans-serif;">Eski Çalışma Arkadaşımız Sevgili Baran Zontul'u Saygıyla Anıyoruz</h2>
+  <p>Baran, iyi kalbi, gülümsemesi ve pozitif enerjisiyle herkesin hayatına dokundu.
+  Onu hep güzel anılarla, sevgiyle ve özlemle hatırlıyoruz.
+  Ruhun şad olsun Baran Zontul. </p>
+</section>
 
 <footer>
   <div class="socials">
